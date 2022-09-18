@@ -9,14 +9,27 @@
   font-size: 10px;
   width: 40px;
   height: 40px;
+  margin-left: 10px;
+}
+.offer-word {
+  text-align: center;
+  width: 45px;
+  height: 25px;
+  margin: 5px;
 }
 .hint-field {
-  width: 150px;
+  width: 250px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
   height: 100px;
+}
+.offer-word {
+  border-radius: 5px;
+  border-color: brown;
+  background: violet;
+  color: black;
 }
 .hint {
   display: flex;

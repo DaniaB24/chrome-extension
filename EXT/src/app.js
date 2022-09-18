@@ -12,18 +12,22 @@ const cat = {
 };
 chrome.runtime.onMessage.addListener(gotMessage);
 function gotMessage(request, sender, sendResponse) {
-  const testWord = "google";
+  console.log(request);
+  console.log(sender);
   if (inputField.value == "heldp") {
-    const test = (document.innerHTML = testWord);
-
-    sendResponse({ value: test });
+    const words1 = (document.innerHTML = heldp.heldp);
+    sendResponse({ value: words1 });
   }
   if (inputField.value == "helo") {
-    inputField.value = heldp.heldp[2];
-    sendResponse({ value: inputField.value });
-    return false;
+    const words2 = (document.innerHTML = helo.Helo);
+    sendResponse({ value: words2 });
   }
   if (inputField.value == "cat") {
-    inputField.value = cat.Cat[0];
+    const words3 = (document.innerHTML = cat.Cat);
+    sendResponse({ value: words3 });
   }
 }
+// document.addEventListener("DOMContentLoaded", function () {
+//   buttonsClicked();
+// });
+
